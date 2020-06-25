@@ -1,0 +1,7 @@
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\bin\Debug\TestTask ELaboTek.exe.config
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\bin\Debug\TestTask ELaboTek.exe
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\bin\Debug\TestTask ELaboTek.pdb
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\obj\Debug\TestTask ELaboTek.csprojAssemblyReference.cache
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\obj\Debug\TestTask ELaboTek.csproj.CoreCompileInputs.cache
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\obj\Debug\TestTask ELaboTek.exe
+c:\users\darkrs\documents\visual studio 2017\Projects\TestTask ELaboTek\TestTask ELaboTek\obj\Debug\TestTask ELaboTek.pdb
