@@ -21,7 +21,6 @@ namespace TestTask_ELaboTek
             Console.WriteLine($"Количество ходов: {Test1Count}");
             Console.WriteLine(" "); Console.WriteLine(" ");
 
-
             int[] test2 = new int[3] { 1,2,3};
             Console.Write("Входной массив Test2:");
             WriteMass(test2);
@@ -44,7 +43,18 @@ namespace TestTask_ELaboTek
             Console.WriteLine($"Количество ходов: {Test3Count}");
             Console.WriteLine(" "); Console.WriteLine(" ");
 
-            int a = 0;
+            int[] test4 = new int[5] { 8, 10, 2, 5, 5 };
+            Console.Write("Входной массив Test4:");
+            WriteMass(test4);
+            int Test4Count = Algoritm_Balance(ref test4);
+            Console.WriteLine(" ");
+            Console.Write("Выходной массив:");
+            WriteMass(test4);
+            Console.WriteLine(" ");
+            Console.WriteLine($"Количество ходов: {Test4Count}");
+            Console.WriteLine(" "); Console.WriteLine(" ");
+
+            Console.ReadKey();
         }
 
 
@@ -73,17 +83,32 @@ namespace TestTask_ELaboTek
                             }
                             break;
                         }
-                        else if (i == Mass.Length - 1)
+                        else if (i != Mass.Length - 1 && Mass[i + 1] < BalanceNumber)
                         {
-                            Count++;
-                            Mass[i]--;
-                            Mass[0]++;
+                            while(Mass[i] > BalanceNumber)
+                            {
+                                Count++;
+                                Mass[i]--;
+                                Mass[i + 1]++;
+                            }
                         }
-                        else
+                        else if(i == Mass.Length -1 && Mass[0] < BalanceNumber)
                         {
-                            Count++;
-                            Mass[i]--;
-                            Mass[i + 1]++;
+                            while (Mass[i] > BalanceNumber)
+                            {
+                                Count++;
+                                Mass[i]--;
+                                Mass[0]++;
+                            }
+                        }
+                        else if(i==0 && Mass[Mass.Length-1] < BalanceNumber)
+                        {
+                            while(Mass[i] > BalanceNumber)
+                            {
+                                Count++;
+                                Mass[0]--;
+                                Mass[Mass.Length - 1]++;
+                            }
                         }
                     }
                 }
