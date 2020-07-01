@@ -19,7 +19,7 @@ namespace TestTask_ELaboTek
             WriteMass(test1);
             Console.WriteLine(" ");
             Console.WriteLine($"Количество ходов: {Test1Count}");
-            Console.WriteLine(" "); 
+            Console.WriteLine(" ");
 
             int[] test2 = new int[3] { 1, 2, 3 };
             Console.Write("Входной массив Test2:");
@@ -30,7 +30,7 @@ namespace TestTask_ELaboTek
             WriteMass(test2);
             Console.WriteLine(" ");
             Console.WriteLine($"Количество ходов: {Test2Count}");
-            Console.WriteLine(" "); 
+            Console.WriteLine(" ");
 
             int[] test3 = new int[10] { 1, 1, 1, 1, 1, 1, 1, 1, 2, 0 };
             Console.Write("Входной массив Test3:");
@@ -41,7 +41,7 @@ namespace TestTask_ELaboTek
             WriteMass(test3);
             Console.WriteLine(" ");
             Console.WriteLine($"Количество ходов: {Test3Count}");
-            Console.WriteLine(" "); 
+            Console.WriteLine(" ");
 
             int[] test4 = new int[5] { 8, 10, 2, 5, 5 };
             Console.Write("Входной массив Test4:");
@@ -115,16 +115,17 @@ namespace TestTask_ELaboTek
                     int pos = max_Index;
                     if (pos == 0)
                     {
-                        Count++;
-                        array[pos]--;
-                        array[ArrayLenght]++;
+                            Count++;
+                            array[pos]--;
+                            array[ArrayLenght]++;
+
                         pos = ArrayLenght;
                     }
                     else
                     {
-                        Count++;
-                        array[pos]--;
-                        array[pos - 1]++;
+                            Count++;
+                            array[pos]--;
+                            array[pos - 1]++;
                         pos--;
                     }
                 }
@@ -133,16 +134,19 @@ namespace TestTask_ELaboTek
                     int pos = max_Index;
                     if (pos == ArrayLenght)
                     {
-                        Count++;
-                        array[ArrayLenght]--;
-                        array[0]++;
+                        
+                            Count++;
+                            array[ArrayLenght]--;
+                            array[0]++;
+                            
+
                         pos = 0;
                     }
                     else
                     {
-                        Count++;
-                        array[pos]--;
-                        array[pos + 1]++;
+                            Count++;
+                            array[pos]--;
+                            array[pos + 1]++;
                         pos++;
                     }
                 }
@@ -228,7 +232,7 @@ namespace TestTask_ELaboTek
                 {
                     RangeFowardBuf = Math.Abs(max_Index - i);
                     RangeBackBuf = Math.Min(i, max_Index) + (array.GetLength(0) - Math.Max(i, max_Index));
-                    RangeNearBuf = Math.Min(RangeBack, RangeFoward);
+                    RangeNearBuf = Math.Min(RangeBackBuf, RangeFowardBuf);
 
                     if(RangeNear > RangeNearBuf)
                     {
